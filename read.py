@@ -34,3 +34,7 @@ print(good[0])
 
 #快寫法版本
 good = [d for d in data if 'good' in d]  #最前面d代表把每個d裝進清單中
+print(good)
+
+bad = ['bad' in d for d in data]  #第二種塊寫法範例
+print(bad)
