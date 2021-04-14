@@ -6,9 +6,10 @@ with open('reviews.txt', 'r') as f:
 		count += 1 # count = count + 1
 		if count % 1000 == 0: # %求於數
 			print(len(data))
-print(len(data))
+print('檔案讀取完了，總共有', len(data), '筆資料')
+#計算每筆資料平均長度
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
 
-
-print(data[0])
-print('--------')
-print(data[1])
+print('平均是', sum_len/len(data))
